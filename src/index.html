@@ -1,13 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concessionária</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-  <script src="script.js"></script>
+    <div class="container">
+        <h1>Lista de Carros</h1>
+        <div class="grupo-input">
+            <input type="text" id="carroMV" placeholder="Modelo do veículo">
+            <input type="text" id="carroCV" placeholder="Cor do veículo" >
+            <input type="text" id="carroAV" placeholder="Ano do veículo" >
+            <input type="text" id="carroPV" placeholder="Preço do veículo">
+            <input type="text" id="carroFV" placeholder="URL da Foto do veículo">
+
+            <div>
+                <p>Vendido?</p>
+                <input type="checkbox" id="carroVendido">
+            </div>
+            
+            <button onclick="adicionarTarefa()">Adicionar Carro</button>
+
+        </div>
+        <ul id="lista-tarefa"></ul>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
